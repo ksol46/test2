@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* 초기화 코드 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ccc;
+    padding: 20px;
+}
+
+#singup {}
+
+#signup fieldset {
+
+}
+
+/* 제출 버튼 */
+#signuo fieldset :last-of-type {
+
+}
+
+/* 로그인 정보, 개인정보 */
+#signuo legend {
+
+}
+
+/* 개인정보 li, 로그인 정보 li */
+#signuo ul li {
+
+}
+
+/* label 요소 */
+#signup label {
+
+}
+
+/* 제출 버튼 */
+#signup button {
+
+}
+
+/* input타입이 text, password, tel, email */
+#signup input[type=text], #signup input[type=passwprd]
+#signup input[type=tel], #signup input[type=email] {
+
+}
+
+/* input에서 required 속성을 가진 */
+#signup input[:required] {
+}
+
+/* input에서 readonly 속성을 가진 */
+#signup input[:read-only] {
+
+}
+
+/* 마우스를 올렸을 때 */
+#signup button[:hover] {
+
+}
