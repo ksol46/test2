@@ -1,0 +1,232 @@
+
+
+live 서버 안열리면 change... 열어보기
+
+
+
+------------------------------------------
+태그는 용도에 맞게 쓰기.
+-> 레퍼런스 참고, 많은 사이트 찾아보기.
+
+html 페이지 1개당 코드 폼 한개만 사용.
+
+F12 -> 페이지 태그 볼 수 있음.
+
+
+코드 입력시 들여쓰기 줄맞춤 주의
+-> Tab 키
+
+홈페이지 레이아웃 헤더, 메인, 푸터
+레이아웃 만들 때 쓰는 태그 : flex, grid, float, table
+
+<html lang="ko"> 한글로 바꾸기!
+
+ctrl + / = <!-- --> 주석처리
+-> 프로그램 실행 영향 받지 않음.
+-> 정리 할 때 용이함.
+
+
+<<<일반태그>>> 04번 폴더
+
+<br> 또는 <br /> : 줄바꿈
+-> 대체적으로 후자를 더 많이 씀.
+( <hr>, <hr /> 도 있음)
+
+<p></p> 문장 사용
+
+<h1> 태그 -> 로고 사용.
+<h1-h6> -> 숫자가 클수록 글씨 작아짐.
+
+<q>태그 -> 짧은 인용구. 자동으로 앞뒤에 큰따옴표가 붙음
+<blockquote> -> 인용문 : 다른 사람의 말이나 책 내용 기타 등등..
+
+<strong> -> 주의사항 (매우 중요한 텍스트를 표시할 때 사용) 굵게 표시됨.
+<b> -> 단순히 굵게 보여줄 때.
+* 시각장애인용 낭독기의 경우 b태그는 그냥 넘어가고, strong 태그는 강조해서 읽어준다고 함.
+
+<em> -> 강조, 기울임
+<i> -> 기울임
+* 낭독기에서 강조해서 읽어줌.
+
+<mark><mark> 하이라이트. 형광펜으로 표시된 것 처럼 표시됨.
+
+<sub> 아래 첨자 사용
+<sup> 위 첨자 사용
+
+<s> 텍스트를 선으로 표시함. (예 : 취소선)
+<del></del> 취소된것처럼 보임 s랑 똑같음.
+<u> 밑줄
+<ins> 밑줄, 새롭게 삽입된 내용을 정의함.
+
+<div> 레이아웃 만들 때 주로 쓴다. 박스를 만들어줌 / 레이아웃 할 때 다시 할 예정.
+
+<ol> order list : 순서가 있는 리스트를 작성할 때
+<li> 하이 태그. 숫자를 매겨줌.
+
+<ol type="a"> : a,b,c순서로 배열 / i,I로 쓰면 로마자로 배열됨.
+<ol start="3"> : 3번째부터 시작하겠다
+
+<ul> unorder list : 순서가 없는 리스트
+*** <ul> </ul> 메뉴 만들 때 사용 ***
+<li> 하이 태그. 숫자 말고 앞 표시만 있음.
+
+<d> discription list : 설명 목록
+<dt> 제목
+<dd> 설명
+
+***table 태그 -> 게시판 만들 때 사용. ***
+
+<caption> </caption> 제목 태그
+<tr> 행 (row)
+<td> 열 (culumn) 내용.
+<th> 열 (culumn) 헤더 라고 인식. 두껍게 표시됨. 옵셔널, 가로세로 모두가능.
+
+<thead> table head
+<tbody> table body ------> 옵셔널. 모두 안하는 것 보단 낫다.
+<tfoot> 
+
+<colgroup> 전체 열에 스타일 적용
+<속성값 rowspan="숫자"> 행을 합침. 행의 갯수.
+<속성값 colspan="숫자"> 열을 합침. 열의 갯수.
+<속성값 span="숫자">
+
+이미지 첨부 코드
+src - 경로
+alt - 이미지를 표시할 수 없을 때 대체함, 접근성을 위해 반드시 해야함.
+<img src="./images/tangerines.jpg" alt="레드향">
+
+경로 지정
+./ 앞으로 감
+..// 되돌아감
+
+오디오 첨부
+<audio src="medias/spring.mp3" controls></audio>
+<audio src="medias/spring.mp3" controls (autoplay, loop, mute)></audio> 
+-자동재생 이지만 브라우저 정책에 따라 작동 안됨
+-자동재생
+-음소거
+
+비디오 첨부
+poster -  영상이 재생되지 않을때 이미지가 나옴
+
+<object> 오디오, 비디오, pdf 자바 애플릿 등 멀티미디어 파일 삽입
+<object width="900" height="800" data="product.pdf"></object>
+<emved> 역사가 오래됨, 멀티미디어 파일 넣을 수 있다. (오디오, 비디오, 이미지)
+<embed src="medias/spring.mp3">
+
+<a></a> 링크삽입
+target : 연결된 문서를 열 위치를 지정하는 속성
+<a href="../05/order.html"><img src="images/tangerines.jpg" alt="레드향"></a>
+href : 링크의 목적지를 나타내는 속성
+<p><a href="http://blog.daum.net/jepaf/2" target="_blank">자세한 정보 보기</a></p>       
+_blank : 새 창으로 열림
+_self : 현재페이지에서 열림
+
+
+
+<<<폼태그>>> 05번 폴더
+회원가입 창 같은곳에 많이 씀.
+
+<form></form>
+
+<fieldset> 요소는 하나의 그룹으로 묶은 요소들 주변으로 박스 모양의 선을 그려줍니다.
+<legend> 요소를 사용하면 <fieldset> 요소의 캡션(caption)을 정의할 수 있습니다.
+
+/////<form></form>태그 안에 있어야함!/////
+
+<input type="text" id="user-id"> / input+id 짝꿍
+input : 입력받고 어딘가에 값을 넘겨주는 태그
+id : 1) 아이디를 줌. <h>태그가 너무 많으면 찾을 수 없어서 id를 설정해서 구분해줌. 소문자로 시작, 의미있는 말로 지어야 함.
+
+<label for="user-id">아이디(6자 이상)</label> / label+for 짝꿍
+label : <input> 짝꿍태그. 
+for : 
+id , name 거의 똑같이 맞춰준다. 똑같이 사용함.
+한 그룹에 있는 name은 같게 해준다.
+
+user_id = p
+user_pw = 1234
+
+<label></label> - 선택 할 수 있는 범위가 넓어짐. 안해도 무방함.
+
+<input> 태그 안에 속성값 ( ______=)
+value - input 요소의 입력 필드(input field)에 나타나는 초깃값을 설정
+autofocus - 포커싱 해줌
+placeholder - 창 안에 작은글씨로 설명할 때
+readonly - 읽기전용, 수정 불가능
+required - 필수 입력
+checked - 여러 개의 옵션 중에서 처음에 미리 선택되는 옵션을 지정할 수 있다.
+disabled - 이용하여 해당 옵션을 선택할 수 없게 설정할 수도 있다.
+
+ <form autocomplete="on"> - form 태그에 사용, 자동완성기능, "on, off"로 작성해줌.
+
+
+전송되어지는 값은 ///value="blue"///
+
+"radio" 하나만 선택 가능해서 name을 다르게 입력하면 중복으로 선택하게 만들 수 있음.
+
+input type="_____" : w3scools 안에 나오는 태그들 많이 있음.
+<input type="button"> - 단순 버튼
+<input type="checkbox"> - 체크박스, 중복선택 가능
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email"> - 사용시 자바스크립트도 확인 안해도 됨.
+<input type="file"> -파일 전송가능
+<input type="hidden"> - 유저가 굳이 보지 않아도 되는 것을 적어놓음.?
+<input type="image"> - 버튼기능인데 이미지를 넣을 수 있음.
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio"> - 동그란 모양 선택버튼, 한개만 선택 가능
+
+<input type="range"> - 선택범위 조절
+  <input type="range" min="0" max="5" maxlength="5">개 (최대 5개) / 최소값, 최대값 지정 가능 / 최대자리수 지정
+
+<input type="reset"> - 사라짐
+<input type="search">
+<input type="submit"> - 전송기능
+<input type="tel"> - 전화걸기 가능
+<input type="text"> (default value) - 텍스트 입력 가능
+<input type="time">
+<input type="url">
+<input type="week">
+
+
+textarea 태그
+<textarea id="memo" cols="40" rows="4"></textarea>
+속성값
+cols="가로길이" 영문 글자가 들어가는 칸 또는 줄의 수
+rows="세로길이"
+
+
+select 태그
+<select id="prod1">
+      <option value="special_3" selected>선물용 3kg</option>
+      <option value="special_5">선물용 5kg</option>
+      <option value="family_3">가정용 3kg</option>
+      <option value="family_5">가정용 5kg</option>
+    </select>
+select 태그는 바로 자동완성으로 기본값이 작성됨.
+option 태그도 쳐야하는데 자동완성으로 기본값이 작성됨.
+selected 속성값. 디폴트한 값 적용
+
+datalist 태그, 반드시 연결해서 사용
+<datalist id="pack">
+      <option value="package">선물 포장</option>
+      <option value="nopackage">포장 안함</option>
+    </datalist>
+
+<input type="button" value="버튼">
+<button>버튼</button>
+
+<input type="submit" value="주문하기">
+<button type="submit">주문하기</button>
+
+<input type="button" value="취소or리셋">
+<button type="reset">취소하기or다시쓰기</button>
+
+
+
+
+
