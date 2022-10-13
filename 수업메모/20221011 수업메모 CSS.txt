@@ -94,6 +94,48 @@ block 태그의 특징을 사용할 수 있다.
 
 z-index: 수치가 클수록 앞으로 나옴
 
+float 사용시 넘치는 부분을 숨겨줌
+-> overflow: hidden;
+
+<style>안에
+background 사용 예시
+배경 위에 이미지를 올려야 할 때
+이미지에 글자나 애니메이션 효과를 주어야 할 때 <div>사용
+-background-repeat:no-repeat;  /* 배경 이미지 반복 안함 */
+-background-image:url('images/book-icon.png');  /* 배경 이미지 파일 */
+-background-position:left center;  /* 배경 이미지 위치 */
+-background-attachment:fixed;  /* 배경 이미지 고정 */
+
+flex : 너비
+flex-basis : 기본 크기 
+flex-grow : 컨테이너에 남는 공간이 있으면
+ 아이템의 flex-basis 크기가 얼마나 더 
+할당 가능한지 나타내는 속성 (얼마나 더 늘려줄 수 있는지)
+flex-shrink : 컨테이너에 공간이 부족해지면
+아이템의 크기가 얼마나 더 줄어들 수 잇는지 (얼마나 줄일 수 있는지)
+flex-direction: 방향
+flex-wrap : 아이템들이 넘칠때 감싸는 기능
+flex-flow : direction, wrap 한번에 사용해줌
+
+
+grid-template-columns: 1fr 1fr 1fr ;-> 비율로 채워짐
+grid-template-columns: 200px 200px 200px ;-> 200px 크기로 정렬
+
+속성값
+grid-template-columns: repeat(3, 1fr) ; -> 1fr을 3번 반복함
+grid-template-rows: minmax(100px, auto) -> (최솟값, 최댓값) -> 100px 이하로는 길이가 짧아질 수 없음.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
