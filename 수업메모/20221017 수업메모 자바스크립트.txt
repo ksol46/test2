@@ -1,0 +1,15 @@
+<script> </script>
+
+주석
+// -> 한 줄로 작성
+/* */ 여러줄 작성
+
+
+alert("__text__"); -> 경고
+confirm("__text__");-> 확인, 취소
+prompt("__text__",초기값); ->입력
+
+console.log("_text_"); html 페이지 f12 콘솔창에 나타남
+document.write("안녕하세요 테스트입니다."); 브라우저에 출력
+
+
