@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 문제. bmi 지수 계산하는 함수를 만드시오.
+    -매개변수는 몸무게, 신장
+    -return값은 bmi지수를 리턴하고 출력한다.
+    -세가지(익명, 비익명, 화살표 함수) 모양의 함수로 만들 것.
+     BMI지수=몸무게(kg) / (신장(m)*신장(m)) -->
+    <script>
+        //1. 이름 있는 함수 (비익명)
+        //몸무게 = a, 신장 = b
+        function bmi(a, b) {
+            let sum = a / (b*b);
+            return sum;
+        }
+
+        let result = bmi(10, 10)
+        console.log(result);
+
+        
+
+
+
+    </script>
+</body>
+</html>

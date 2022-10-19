@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for문 : 반복문
+        //
+        /*for (let i = 0; i < 5; i++) {
+            console.log(i);
+        }*/
+
+        /*let sum = 0;
+        for (let i = 0; i <= 100; i++) { //0~100
+            sum += i //sum = sum + i; // 0~100 합계
+            console.log(`sum: ${sum}`)
+        }*/
+
+        const todos = ['우유 구매', '메일 확인', '헬스']
+
+        /*for (let i=todos.length-1; i>=0; i--) {
+            console.log(`${i}번째 할 일은 ${todos[1]}`)
+        }*/
+
+        /*
+        //for in
+        for (const i in todos) {
+            console.log(`${i}번째 할 일은 ${todos[i]}`)
+        } */
+
+        
+        //for of - todo 자리에 단수, todos 자리에 복수로 적는다
+        for (const todo of todos) {
+            console.log(`오늘의 할 일은 ${todo}`)
+        }
+
+    </script>
+</body>
+</html>
