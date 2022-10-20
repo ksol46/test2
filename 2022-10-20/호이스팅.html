@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //호이스팅 가능 -> 정의를 위로 올릴 수 있음 비익명함수
+    a();
+
+    function a() {
+    document.write("haha");
+    }
+
+    
+    //호이스팅 불가능 -> 익명함수
+    b();
+
+    const b = function () {
+    document.write("baba");
+    };
+    
+
+
+
+
+
+    </script>
+</body>
+</html>

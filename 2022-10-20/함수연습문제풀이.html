@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,33 +13,26 @@
     -세가지(익명, 비익명, 화살표 함수) 모양의 함수로 만들 것.
      BMI지수=몸무게(kg) / (신장(m)*신장(m)) -->
     <script>
-        //1. 이름 있는 함수 (비익명)
-        /*
+        //함수정의
+        //비익명함수
         function bmi(weight, height) {
             let result = weight / (height * height);
             return result;
         }
 
-        let result = bmi(55, 153);
-        console.log(result);
-        */
-
-        //2. 익명함수
-        /*
+        //익명함수
         const bmi = function(weight, height) {
             let result = weight / (height * height);
             return result;
         }
-        */
 
-        //3. 화살표 함수
-        /*
+        //화살표 함수(es6)
         const bmi = (weight, height) => weight / (height * height);
-        */
 
-        //함수 실행
-        let result = bmi(55, 153);
-        console.log(result);
+        //실행
+        let result2 = bmi(60, 160);
+
+        console.log(result2);
 
     </script>
 </body>

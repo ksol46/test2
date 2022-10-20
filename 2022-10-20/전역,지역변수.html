@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수</title>
+    <body>
+        <script>
+            var num = 1; //함수 밖에 있음 -> 전역변수
+            //함수선언
+            function love(){
+              var a = num+1; //함수 안에 있음 -> 지역변수
+              console.log('a:',a);
+            }
+            love();
+            console.log(num);
+
+            //----------------------------------------------------
+
+            var num = 1; //함수 밖에 있음 -> 전역변수
+            //함수선언
+            function love(){
+              var b = 10; //지역변수
+              var a = num+1; //함수 안에 있음 -> 지역변수
+              console.log('a:',a);
+            }
+            love();
+            console.log(b);
+            console.log(num);
+            
+            /* 지역변수는 함수 안에 있기 때문에 사용할 수 없다.
+
+        </script>
+</body>
+</html>
