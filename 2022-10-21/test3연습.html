@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. 속성에 고양이 종류 넣기
+        2. 메소드로 고양이 종류 출력하기 -->
+    <script>
+    function Pet (nameVal, ageVal, catVal) {
+        this.name = nameVal
+        this.age = ageVal
+        this.cat = catVal
+        
+        this.eat = function (food) {
+            console.log(`${this.name}이가 ${food}을(를) 먹습니다.`)
+        }
+        this.agePrint = function () {
+            console.log(`${this.name}의 나이는 ${this.age}입니다.`)
+        }
+        this.catVal2 = function () {
+            console.log(`${this.name}종류는 ${this.cat}입니다. `)
+        }
+    }
+
+        const pet = new Pet("재롱", 10, "검은")
+        const pet2 = new Pet("별", 5, "노란")
+        const pet3 = new Pet("달", 7, "흰")
+        const pet4 = new Pet("해", 9, "회색")
+
+        pet.eat('밥')
+        pet.agePrint(10)
+        pet.catVal2('검은')
+        pet2.eat('밥')
+        pet2.agePrint(5)
+        pet2.catVal2('노란')
+        pet3.eat('밥')
+        pet3.agePrint(7)
+        pet3.catVal2('흰')
+        pet4.eat('밥')
+        pet4.agePrint(9)
+        pet4.catVal2('회색')
+
+    </script>
+</body>
+</html>

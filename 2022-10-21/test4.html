@@ -7,24 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- 1. 속성에 고양이 종류 넣기
-        2. 메소드로 고양이 종류 출력하기 -->
     <script>
-    function Pet (nameVal, ageVal, catVal) {
-        this.name = nameVal
-        this.age = ageVal
-        this.cat = catVal
-        this.eat = function (food) {
-            console.log(`${this.name}이가 ${food}을 먹습니다.`)
+        //3. prototype방식
+        //객체 = 속성 + 메소드
+        function Pet(nameVal, ageVal, catVal) {
+            //속성
+            this.name = nameVal
+            this.age = ageVal
+            this.cat = catVal
         }
-        this.agePrint = function () {
+
+        //객체명.prototype.함수명 = function() {}
+        Pet.prototype.eat = function (food) {
+            console.log(`${this.name}이가 ${food}을(를) 먹습니다.`)
+        }
+
+        Pet.prototype.agePrint = function() {
             console.log(`${this.name}의 나이는 ${this.age}입니다.`)
         }
-        this.catVal2 = function () {
+
+        Pet.prototype.catVal2 = function () {
             console.log(`${this.name}종류는 ${this.cat}입니다. `)
         }
-    }
-
+    
         const pet = new Pet("재롱", 10, "검은")
         const pet2 = new Pet("별", 5, "노란")
         const pet3 = new Pet("달", 7, "흰")
