@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 객체 -->
+    <script>
+    //1. 리터럴 방식(6-1-1.html)
+    //객체 = 속성(스펙) + 메소드(함수)   
+    
+    //속성추가 해보기 :나이, 종->출력까지
+    //함수 추가해보기: 잠자다, 매개변수로 ~어디에서
+    const pet = {
+        name: '재롱', //속성 / key-name : value-'구름'
+        //age: 10,
+        dog: '말티즈',
+        //함수
+        /*
+        eat: function(food) { //메소드 / key-eat : value-function
+            console.log(`재롱이가 ${food}을 먹습니다.`)
+        },
+        sleep: function(where) {
+            console.log(`재롱이가 ${where}에서 잠을 잡니다.`)
+        }*/
+        //화살표 함수로 바꾸기
+        /*
+        eat: (food) => {
+            console.log(`재롱이가 ${food}을 먹습니다.`)
+        },
+        sleep: (where) => {
+            console.log(`재롱이가 ${where}에서 잠을 잡니다.`)
+        }*/
+
+    }
+
+    console.log(pet.name)
+    pet.eat('개껌')
+    console.log(pet.dog)
+    pet.sleep('바닥')
+    
+
+
+
+
+    </script>
+</body>
+</html>

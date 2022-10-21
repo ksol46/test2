@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 객체 -->
+    <script>
+    //배열, 객체 데이터(JSON), 데이터를 다루는 방식
+    const product = {   //변수명 + { }
+        name: '건조망고', // key : value 이렇게 작성한다.
+        type: '당절임',
+        weight: 3,
+        arr: ['안', '녕', '하']
+    }
+
+    //데이터 보기
+    console.log(product) // product 전체 보기
+    console.log(product.type) // product - type 보기
+
+    //데이터 바꾸기 -> name자리에 있는걸 바꿈
+    product.name = '바나나'
+    console.log(product)
+
+    //배열 꺼내오기
+    const result = product.arr
+    console.log(result[1])
+
+    //데이터 추가
+    product.date = '2022/10/21'
+    console.log(product)
+    
+    //데이터 삭제
+    delete product.weight
+    console.log(product)
+
+    
+
+
+
+    </script>
+</body>
+</html>
