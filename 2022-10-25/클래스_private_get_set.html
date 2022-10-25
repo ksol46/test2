@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    class Square {
+        #length
+        /*this.length를 private로 사용하겠다고 정의 함.
+        출력 불가능. 외부에서 볼 수도 없고, 수정 할 수도 없다.*/
+
+
+        constructor (length) { 
+            this.#length = length
+        }
+
+        //값을 보여 줌.
+        get length () {
+            return this.#length
+        }
+
+        //값을 세팅 함.
+        set length () {
+            return this.#length
+        }
+
+
+
+
+        //사각형 둘레 구하기
+        get getPerimeter () {
+            return 4 * this.#length 
+        }
+
+        //사각형의 넓이 구하기
+        get getArea () {
+            return this.#length * this.#length
+        }
+    }
+
+
+    //private: 외부에서 접근하지 못하게 한다.
+    const Square = new Square(10) //수정 못 함
+    console.log(`length: ${Square.width}`) // 볼 수 없음.
+    console.log(`getPerimeter(): ${Square.getPerimeter()}`)
+    console.log(`getArea(): ${Square.getArea()}`)
+
+
+    </script>
+</body>
+</html>
