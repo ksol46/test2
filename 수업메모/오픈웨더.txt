@@ -1,0 +1,18 @@
+129cce7b0119047c6837b90fd3ece8f9
+
+https://api.openweathermap.org/data/2.5/weather?
+appid=129cce7b0119047c6837b90fd3ece8f9
+&units=metric
+&lang=kr
+&q=seoul //--> 지역이름 계속 바꿔줌
+
+
+
+
+지도 불러오기
+카카오로 하기.
+
+
+날씨 불러오기
+제이쿼리 사용시 $아이작스
+

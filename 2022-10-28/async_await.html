@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- async : 비동기 , await : 기다리다 -> 밑에 있는 것들이 끝날 때 까지 기다려준다.-->
+    <script>
+        async function asyncFunc() {
+            let promise = new Promise((resolve, reject)=>{
+                setTimeout(()=> {resolve("완료")}, 2000)
+            })
+
+            let result = await promise
+
+            alert(result)
+        }
+
+        asyncFunc()
+    </script>
+</body>
+</html>
